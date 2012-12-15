@@ -18,10 +18,10 @@ while($l = mysql_fetch_array($request)) {
         $title          = $l["title"];
         $description    = $l["description"];
         $price          = $l["value"];
-
+	$id             = $l["product_id"];
 	echo "
         <tr>
-                <td><a href=\"editar.php?id=$id\">[Editar]</a> <a href=\"excluir.php?id=$id\">[Excluir]</a></td>
+                <td><a href=\"editar.php?id=$id\">[Editar]</a> <a href=\"excluir_produto.php?id=$id\">[Excluir]</a></td>
                 <td> $title</td>         
                 <td> $description</td>
                 <td> R$ $price</td>
