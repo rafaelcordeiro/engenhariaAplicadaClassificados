@@ -4,8 +4,8 @@
 
 
 <h2>OlÃ¡!</h2><br><br>
-<a href="cadastro_de_usuario.html"> Cadastre-se</a> <br>
-<a href="login_de_usuario.html"> Já cadastrado? Efetue login</a>
+<a href="cadastro_de_usuario.php"> Cadastre-se</a> <br>
+<a href="login_de_usuario.php"> Já cadastrado? Efetue login</a>
 <?php
 ?>
 

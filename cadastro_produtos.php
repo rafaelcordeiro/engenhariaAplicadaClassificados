@@ -29,7 +29,7 @@ echo "Seu produto foi cadastrado com sucesso! Boas Vendas!"; //cadastro realizad
 
 ?>
 <br>
-<a href="cadastro_de_produtos.html"> Cadastrar outro produto</a>    <a href="index.php"> Voltar ao menu</a>
+<a href="cadastro_de_produtos.php"> Cadastrar outro produto</a>    <a href="index.php"> Voltar ao menu</a>
 
 </body>
 </html>
