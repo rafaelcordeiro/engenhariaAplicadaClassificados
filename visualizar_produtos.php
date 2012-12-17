@@ -1,8 +1,13 @@
 <?php
 
-include 'mysql_connection.php';
+include("security.php");
+protegePagina();
 
-$request = mysql_query("SELECT * FROM products;");
+$owner = $_SESSION['userEmail'];
+echo "";
+echo $owner;
+
+$request = mysql_query("SELECT * FROM products WHERE owner='$owner';");
 
 ?>
 
@@ -14,11 +19,15 @@ $request = mysql_query("SELECT * FROM products;");
                 <td>Valor</td>
         </tr>
 <?php
+//if(empty($request)) {
+//	echo"Você ainda não cadastrou nenhum produto";
+//	echo"<a href=\"cadastro_de_produtos.html\">Cadastrar Produto</a> ";
+//}
 while($l = mysql_fetch_array($request)) {
         $title          = $l["title"];
         $description    = $l["description"];
         $price          = $l["value"];
-	$id             = $l["product_id"];
+	     $id             = $l["product_id"];
 	echo "
         <tr>
                 <td><a href=\"editar.php?id=$id\">[Editar]</a> <a href=\"excluir_produto.php?id=$id\">[Excluir]</a></td>
@@ -33,4 +42,4 @@ mysql_close();
 </table>
 
 <br>
-<a href="index.php">Voltar</a>
+<a href="menu_usuario.php">Voltar</a>

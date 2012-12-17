@@ -5,16 +5,18 @@
 <body>
 <?php 
 
-include 'mysql_connection.php';
+include("security.php");
+protegePagina();
 
 
 $title= $_POST["title"];
 $description= $_POST["description"];
 $price= $_POST["price"];
+$owner = $_SESSION['userEmail'];
 //$pricef = floatval($price);
 
 //inserção nas tabelas title, description e value, as respectivas variáveis
-$dataInsertion = "INSERT INTO `products` ( `title` , `description` , `value`  ) VALUES ('$title', '$description', '$price')";
+$dataInsertion = "INSERT INTO `products` ( `title` , `description` , `value` , `owner` ) VALUES ('$title', '$description', '$price' , '$owner' )";
 mysql_query($dataInsertion);
 
 mysql_close();

@@ -4,8 +4,8 @@
 
 
 <h2>Ol√°!</h2><br><br>
-<a href="cadastro_de_produtos.html"> Cadastrar Produto</a> <br>
-<a href="visualizar_produtos.php"> Visualizar Produtos</a>
+<a href="cadastro_de_usuario.html"> Cadastre-se</a> <br>
+<a href="login_de_usuario.html"> J· cadastrado? Efetue login</a>
 <?php
 ?>
 
