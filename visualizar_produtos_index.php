@@ -12,10 +12,7 @@ $request = mysql_query("SELECT * FROM products;");
                 <td>Valor</td>
         </tr>
 <?php
-//if(empty($request)) {
-//	echo"Você ainda não cadastrou nenhum produto";
-//	echo"<a href=\"cadastro_de_produtos.html\">Cadastrar Produto</a> ";
-//}
+
 while($l = mysql_fetch_array($request)) {
         $title          = $l["title"];
         $description    = $l["description"];
