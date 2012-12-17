@@ -11,7 +11,7 @@
     $insertion_query = "INSERT INTO user (name, password, email) VALUES ('$name','$password', '$email')";
 
     while($u = mysql_fetch_array($users)) {
-      if($name == $u["name"] or $email == $u["email"]) {
+      if($email == $u["email"]) {
         $qty_users += 1;
         break;    
       }
