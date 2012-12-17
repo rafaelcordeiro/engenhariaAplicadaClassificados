@@ -7,7 +7,7 @@ $owner = $_SESSION['userEmail'];
 echo "";
 echo $owner;
 
-$request = mysql_query("SELECT * FROM products WHERE owner='$owner';");
+$request = mysql_query("SELECT * FROM products WHERE owner='$nowner';");
 
 ?>
 

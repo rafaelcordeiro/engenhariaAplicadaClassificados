@@ -17,7 +17,7 @@
         <table>
             <tr>
                 <td>Email: </td>
-                <td><input type="text" id="email" name="email"/></td>
+                <td><input type="text" id="email" name="user"/></td>
             </tr>
             <tr>
                 <td>Senha: </td>

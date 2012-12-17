@@ -48,7 +48,7 @@
 	</table>
 </form>
 <br>
-<a href="menu_usuario.php"> Voltar ao menu</a>
+<a href="index.php"> Voltar ao menu</a>
 
 
 </body>
