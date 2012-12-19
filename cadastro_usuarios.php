@@ -1,5 +1,6 @@
 <?php
 
+
     include 'mysql_connection.php';
 
     $name       = $_POST["nome"];
@@ -19,11 +20,10 @@
 
     if($qty_users == 0) {
       mysql_query($insertion_query);
-      echo "Cadastro Efetuado com Sucesso!";
-      include 'index.php';
+      echo "<spam class='cadastrado'>Parabéns! Agora você está cadadastrado.<br/>Inicie agora mesmo seus anúncios!</span>";
     }
     else {
-     echo "Nome ou Email já existe!";
+     echo "<span class=\"emailjaexiste\">ATENÇÂO: O email já fornecido já está utilizado por outro usuário(a)!</span>";
     }
 	
     mysql_close();

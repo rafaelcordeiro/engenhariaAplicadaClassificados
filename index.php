@@ -1,18 +1,8 @@
-
-<head><title>Classificados - Página Principal</title></head>
-<body>
-
-
-<h2>Olá!</h2><br><br>
-<a href="cadastro_de_usuario.php"> Cadastre-se</a> <br>
-<a href="login_de_usuario.php"> J� cadastrado? Efetue login</a>
-<?php
-?>
-
-
-
-
-
-</body>
-
-</html>
+<?php include("header.php")?>
+  <table width="1000" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="46">&nbsp;
+        <?php include("visualizar_produtos_index.php")?></td>
+    </tr>
+  </table>
+<?php include("footer.php")?>

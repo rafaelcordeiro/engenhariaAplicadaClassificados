@@ -11,7 +11,7 @@
 <script language="JavaScript" src="scripts.js"></script>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+<?php include("header.php")?>
 
     <form name="cadastro_usuario" action="cadastro_usuarios.php" method="post" onsubmit="return validarCamposUsuario(); return false;">
         <table>
@@ -45,5 +45,8 @@
             </tr>
         </table>
     </form>
+    
+    <?php include("footer.php")?>
+    
 </body>
 </html>

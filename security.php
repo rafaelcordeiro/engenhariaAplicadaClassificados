@@ -11,7 +11,7 @@ $_SG['validaSempre'] = true;       // Deseja validar o usuário e a senha a cada
 // Evita que, ao mudar os dados do usuário no banco de dado o mesmo contiue logado.
 
 
-$_SG['paginaLogin'] = 'login_de_‬usuario.php'; // Página de login
+$_SG['paginaLogin'] = 'user_login.php'; // Página de login
 
 $_SG['tabela'] = 'user';       // Nome da tabela onde os usuários são salvos
 

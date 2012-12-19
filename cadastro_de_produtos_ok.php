@@ -3,8 +3,11 @@
     <tr>
       <td width="547" height="55" align="center"><h1> Publique seu anúncio: </h1></td>
     </tr>
+    <tr>
+      <td height="55" align="center"><?php include("cadastro_produtos.php")?>&nbsp;</td>
+    </tr>
   </table>
-  <form  name="cadastro" method="post" action="cadastro_de_produtos_ok.php" onSubmit="return validarCampos(); return false;">
+  <form  name="cadastro" method="post" action="cadastro_produtos.php" onSubmit="return validarCampos(); return false;">
   <table width="625" border="0" align="center">
     <tr>
       <td width="69">Título:</td>
@@ -34,13 +37,11 @@
           
 
           <span class="style1">* Os campos destacados são OBRIGATÓRIOS!        </span><br />
-          <br />
-          <br />
-          <a href="menu_user.php"><img src="images/back.png" width="128" height="128" align="middle" /><br />
-          Voltar ao painel</a><br />
-      </p>
-
-	<p>  </p></td>
+          </p>
+        <p><a href="menu_user.php"><img src="images/back.png" width="128" height="128" align="middle" /><br />
+Voltar ao painel</a><br />
+          </p>
+        <p>  </p></td>
     </tr>
     
 

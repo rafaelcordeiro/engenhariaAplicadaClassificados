@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Utiliza uma função criada no seguranca.php pra validar os dados digitados
     if (validaUsuario($email, $senha) == true) {
         // O usuário e a senha digitados foram validados, manda pra página interna
-        header("Location: menu_usuario.php");
+        header("Location: menu_user.php");
     } else {
         echo "Usuário ou senha incorretos!";
         endSession();

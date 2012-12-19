@@ -1,25 +1,10 @@
-
-<head><title>Classificados - PÃ¡gina Principal</title></head>
-<body>
-
 <?php
 
 include("security.php"); 
-protegePagina(); 
-
-echo "Olá, " . $_SESSION['userName'];
+if (isset($_SESSION['userID']) OR isset($_SESSION['userName']) OR isset($_SESSION['userEmail'])) {
+	echo "<b>Logado como: <a href=\"menu_user.php\">" .$_SESSION['userName']."</a></b> ";
+}
 
 
 
 ?>
-<br>
-<a href="cadastro_de_produtos.php"> Cadastrar Produto</a> <br>
-<a href="visualizar_produtos.php"> Visualizar Produtos</a>
-<br><br>
-<a href="logout.php">Logout</a>
-
-
-
-</body>
-
-</html>
