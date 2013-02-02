@@ -68,3 +68,16 @@ function validarCamposLoginUsuario(){
 		return true;
 }
 
+function valida_busca_produto(){
+	if(document.frmBusca.tipo[0].checked == false && document.frmBusca.tipo[1].checked == false){
+		alert('Por favor, selecione o tipo de pesquisa.');
+    	return false;
+    	}
+	else if(document.frmBusca.product_name.value=="")
+	 {
+	     alert("Insira algum nome para buscar!");
+	     return false;
+	 }
+	else
+		return true;
+}

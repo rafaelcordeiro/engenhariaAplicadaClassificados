@@ -1,6 +1,6 @@
 <?php
 // Inclui o arquivo com o sistema de segurança
-include("security.php");
+require_once("security.php");
 
 // Verifica se um formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

@@ -1,19 +1,18 @@
 <?php
 
 
-include 'mysql_connection.php';
+require_once 'mysql_connection.php';
 
-$_SG['abreSessao'] = true;         // Inicia a sessão com um session_start()?
+$_SG['abreSessao'] = true;         
 
-$_SG['caseSensitive'] = false;     // Usar case-sensitive? Onde 'thiago' é diferente de 'THIAGO'
-
+$_SG['caseSensitive'] = false;     
 $_SG['validaSempre'] = true;       // Deseja validar o usuário e a senha a cada carregamento de página?
-// Evita que, ao mudar os dados do usuário no banco de dado o mesmo contiue logado.
+// Evita que, ao mudar os dados do usuário no banco de dado o mesmo continue logado.
 
 
-$_SG['paginaLogin'] = 'user_login.php'; // Página de login
+$_SG['paginaLogin'] = 'user_login.php'; // Pag de login
 
-$_SG['tabela'] = 'user';       // Nome da tabela onde os usuários são salvos
+$_SG['tabela'] = 'user';      
 
 // Verifica se precisa iniciar a sessão
 if ($_SG['abreSessao'] == true) {
@@ -80,7 +79,7 @@ function protegePagina() {
 }
 
 /**
- * Função para expulsar um visitante
+ * fun��o que direciona pra pagina de login caso nao tenha alguma sess�o ativa
  */
 function endSession() {
     global $_SG;

@@ -1,6 +1,6 @@
 <?php 
 
-include("security.php");
+require_once("security.php");
 protegePagina();
 
 $owner = $_SESSION['userEmail'];
