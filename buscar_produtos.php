@@ -17,7 +17,7 @@
 		<option value="101ate500">De R$101,00 à R$500,00</option>
 		<option value="501ate1000">De R$501,00 à R$1000,00</option>
 		<option value="acimade1000">Acima de R$1000,00</option>
-	</select> <br>
+	</select> Faixa de Preço <br>
 	<input type="text" name="product_name" />
    <input type="submit" value="Buscar" />
 </form>

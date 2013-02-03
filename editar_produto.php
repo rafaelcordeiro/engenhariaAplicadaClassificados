@@ -48,7 +48,7 @@ while($l = mysql_fetch_array($request)) {
 		</tr>
 	</form>';*/
 	
-echo '<form name="editar_produto" action="edicao_produto_ok.php" method="post" onsubmit="return validarCamposUsuario(); return false;">
+echo '<form name="editar_produto" action="edicao_produto_ok.php" method="post" enctype="multipart/form-data" onsubmit="return validarCamposUsuario(); return false;">
 <INPUT Type="hidden" Name="id" Value="'.$id.'">
 <table width="468" border="0" cellpadding="0" cellspacing="0">
   <tr>
@@ -69,7 +69,7 @@ echo '<form name="editar_produto" action="edicao_produto_ok.php" method="post" o
   </tr>
   <tr>
     <td>Imagem</td>
-    <td>&nbsp;</td>
+    <td><input type="file" name="foto1" size="50"></td>
   </tr>
   <tr>
     <td>&nbsp;</td>

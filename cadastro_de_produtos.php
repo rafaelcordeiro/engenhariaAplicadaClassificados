@@ -4,7 +4,7 @@
       <td width="547" height="55" align="center"><h1> Publique seu anúncio: </h1></td>
     </tr>
   </table>
-  <form  name="cadastro" method="post" action="cadastro_de_produtos_ok.php" onSubmit="return validarCampos(); return false;">
+  <form  name="cadastro" method="post" enctype="multipart/form-data" action="cadastro_de_produtos_ok.php" onSubmit="return validarCampos(); return false;">
   <table width="625" border="0" align="center">
     <tr>
       <td width="69">Título:</td>
@@ -23,7 +23,7 @@
     </tr>
     <tr>
       <td>Imagem:</td>
-      <td><input type="file" name="foto_filme" size="50"></td>
+      <td><input type="file" name="foto1" size="50"></td>
 	</tr>
     <tr>
       <td colspan="2" align="center"><p>

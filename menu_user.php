@@ -1,5 +1,5 @@
 <?php include("header.php")?>
-<?php include("security.php")?>
+<?php require_once("security.php")?>
 <?php protegePagina()?>
 <table width="739" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
