@@ -1,5 +1,5 @@
 <?php
-include("mysql_connection.php");
+require_once("mysql_connection.php");
 
 $request = mysql_query("SELECT * FROM products;");
 
@@ -27,11 +27,11 @@ echo "<div style=\"float:left; background-color:white;\">
     <td width=\"23\" bgcolor=\"#ffe\">&nbsp;</td>
     </tr>
   <tr>
-    <td width=\"222\" height=\"38\"><img src='fotos_produtos/".$foto1."' alt='Foto de exibição' /><br /></td>
+    <td width=\"222\" height=\"38\"><img width=\"190\" height=\"150\" src=\"fotos_produtos/$foto1\" alt=\"Foto de exibição\" /><br /></td>
     <td width=\"23\" bgcolor=\"#ffe\">&nbsp;</td>
     </tr>
   <tr>
-    <td width=\"222\" height=\"38\">$title</td>
+    <td width=\"222\" height=\"38\"><h1>$title</h1></td>
     <td width=\"23\" bgcolor=\"#ffe\">&nbsp;</td>
     </tr>
   <tr>
@@ -43,7 +43,7 @@ echo "<div style=\"float:left; background-color:white;\">
     <td bgcolor=\"#ffe\">&nbsp;</td>
     </tr>
   <tr>
-    <td height=\"70\">Negociar</td>
+    <td height=\"70\"><a href=\"ver_produto.php?id=$id\"><img src=\"images/visualizar.png\"></a></td>
     <td bgcolor=\"#ffe\">&nbsp;</td>
     </tr>
 </table>

@@ -12,7 +12,7 @@
     echo "Erro ao excluir produto!";
   
   } else {
-    echo "Produto excluido com secesso!";
+    echo "Produto excluido com sucesso!";
   }
   mysql_close();
   
