@@ -4,7 +4,7 @@
     require_once("security.php");
   protegePagina();
 
-	$id =$_POST["id"];
+	$id = $_POST["id"];
 
 	$name     = $_POST["nome"];
 	$email    = $_POST["email"];
